@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="59abb1dd0f544863a7519ffb17bfb138" Name="Diagram1">
+        <EntityTypeShape EntityType="HRMSModel.Attendance" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HRMSModel.Designation" Width="1.5" PointX="0.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HRMSModel.Designation_History" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HRMSModel.Employee" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HRMSModel.Leave" Width="1.5" PointX="6" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HRMSModel.Leave_Tracking" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HRMSModel.Leave_Type" Width="1.5" PointX="3.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HRMSModel.UserInfo" Width="1.5" PointX="3" PointY="19.25" IsExpanded="true" />
+        <AssociationConnector Association="HRMSModel.Attendance_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="HRMSModel.Employee_Designation_Designation" ManuallyRouted="false" />
+        <AssociationConnector Association="HRMSModel.Employee_Designation_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="HRMSModel.Leave_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="HRMSModel.Leave_Tracking_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="HRMSModel.UserInfo_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="HRMSModel.Leave_Leave_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="HRMSModel.Leave_Tracking_Leave_Type" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

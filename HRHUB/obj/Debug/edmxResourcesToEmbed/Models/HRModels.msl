@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HRMSModelStoreContainer" CdmEntityContainer="HREntities">
+    <EntitySetMapping Name="Attendances">
+      <EntityTypeMapping TypeName="HRMSModel.Attendance">
+        <MappingFragment StoreEntitySet="Attendance">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="CheckIn" ColumnName="CheckIn" />
+          <ScalarProperty Name="CheckOut" ColumnName="CheckOut" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Designations">
+      <EntityTypeMapping TypeName="HRMSModel.Designation">
+        <MappingFragment StoreEntitySet="Designation">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Designation_History">
+      <EntityTypeMapping TypeName="HRMSModel.Designation_History">
+        <MappingFragment StoreEntitySet="Designation_History">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Designation_ID" ColumnName="Designation_ID" />
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="HRMSModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DOJ" ColumnName="DOJ" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Email_ID" ColumnName="Email_ID" />
+          <ScalarProperty Name="BloodType" ColumnName="BloodType" />
+          <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Leaves">
+      <EntityTypeMapping TypeName="HRMSModel.Leave">
+        <MappingFragment StoreEntitySet="Leave">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Submit_Date" ColumnName="Submit_Date" />
+          <ScalarProperty Name="Response_Date" ColumnName="Response_Date" />
+          <ScalarProperty Name="Leave_StartDate" ColumnName="Leave_StartDate" />
+          <ScalarProperty Name="Leave_EndDate" ColumnName="Leave_EndDate" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Leave_Type_ID" ColumnName="Leave_Type_ID" />
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Leave_Tracking">
+      <EntityTypeMapping TypeName="HRMSModel.Leave_Tracking">
+        <MappingFragment StoreEntitySet="Leave_Tracking">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+          <ScalarProperty Name="Leave_Type_ID" ColumnName="Leave_Type_ID" />
+          <ScalarProperty Name="RemainingDays" ColumnName="RemainingDays" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Leave_Type">
+      <EntityTypeMapping TypeName="HRMSModel.Leave_Type">
+        <MappingFragment StoreEntitySet="Leave_Type">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LeaveType" ColumnName="LeaveType" />
+          <ScalarProperty Name="MaxLeave" ColumnName="MaxLeave" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserInfoes">
+      <EntityTypeMapping TypeName="HRMSModel.UserInfo">
+        <MappingFragment StoreEntitySet="UserInfo">
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ResetCode" ColumnName="ResetCode" />
+          <ScalarProperty Name="Token" ColumnName="Token" />
+          <ScalarProperty Name="isAdmin" ColumnName="isAdmin" />
+          <ScalarProperty Name="Captcha" ColumnName="Captcha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
